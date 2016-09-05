@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#b8f5b9"
+    tools:context="com.example.android.udacity_project1.MainActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bakery"
+        />
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:text="Kohshi Bakery!"
+        android:textSize="36sp"
+                />
+
+    <TextView
+        android:id="@+id/occasion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_header"
+        android:fontFamily="sans-serif-light"
+        android:gravity="fill_horizontal"
+        android:padding="16dp"
+        android:text="For All Occasion Cake, Pastries, Muffin Snack, Gift Packing"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/occasion"
+        android:layout_gravity="bottom"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:padding="14dp"
+        android:textStyle="italic"
+        android:text="Web : http://www.kohsibakery.com
+        Phone = +60162025917 || Email : goodbakes@gmail.com
+        Operating hour : 8AM-10PM Daily"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
